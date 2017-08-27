@@ -1,0 +1,92 @@
+@import "../components/variables.scss";
+@import "_smart-grid.scss";
+*{
+  padding: 0;
+  margin: 0;
+  font-family: $PT-Sans-Regular;
+  color: $dark-text;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.clear{
+  clear: both;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+li{
+  list-style-type: none;
+  color:inherit;
+}
+i{
+  color:inherit;
+  font-size:inherit;
+}
+p{
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+.row{
+  @include md(flex-wrap,wrap);
+  // overflow-x: hidden;
+  padding: 0 10px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  align-items: center;
+  margin: auto;
+}
+
+section{
+  padding: 10px;
+  width: 100%;
+}
+.hide{
+  display: none!important;
+}
+main{
+  width: 100%;
+  position: relative;
+}
+.mobile-menu_btn{
+  @include md(display,flex);
+  display: none;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border:1.5px solid #333;
+  flex-wrap: wrap;
+  margin: 10px 10px 10px 0;
+  cursor: pointer;
+  padding: 4px 0
+}
+.mobile-btn_item{
+  width: 80%;
+  height: 3px;
+  background: #333;
+  transition: all 0.3s;
+}
+.switch-1{
+  transform: rotate(45deg);
+  margin-top: 12px;
+  transition: all 0.3s;
+}
+.switch-2{
+  transform: rotate(-45deg);
+  margin-top: -10px;
+  transition: all 0.3s;
+}
+.switch-3{
+  opacity: 0;
+  transition: all 0.3s;
+}
+// ---------------------
